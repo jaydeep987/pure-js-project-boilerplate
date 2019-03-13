@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1234,
+    "name": "Bicycle",
+    "price": 30000
+  },
+  {
+    "id": 1322,
+    "name": "Samsung adapter SD",
+    "price": 2000
+  },
+  {
+    "id": 563,
+    "name": "PS4",
+    "price": 20400
+  },
+  {
+    "id": 4243,
+    "name": "Nintendo switch",
+    "price": 25000
+  },
+  {
+    "id": 4685,
+    "name": "Nikon 5400",
+    "price": 73450
+  }
+]
