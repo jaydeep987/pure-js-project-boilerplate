@@ -5,8 +5,15 @@
     YEN: '円',
   };
 
+  /**
+   * Loads config from given config elements by using default config
+   *
+   * @param {*} $configElem html element which holds config options as attribs
+   * @param {*} defaultConfig default config option values
+   */
   function loadConfig($configElem, defaultConfig) {
     var attrs;
+    var key;
     var config = {};
 
     if (!$configElem || !defaultConfig) {
@@ -15,13 +22,13 @@
 
     attrs = $configElem.attributes;
 
-    Object.keys(defaultConfig).forEach(function eachObject(key) {
+    for (key in defaultConfig) {
       if (typeof attrs[key] !== 'undefined' && attrs[key] !== '') {
         config[key] = attrs[key].nodeValue;
       } else {
         config[key] = defaultConfig[key];
       }
-    });
+    }
 
     return config;
   }

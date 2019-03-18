@@ -19,7 +19,7 @@ module.exports = function karmaConfig(config) {
       type: 'html',
       dir : path.resolve(__dirname, 'coverage'),
     },
-    customContextFile: 'tests/context.html',
+    customContextFile: path.resolve(__dirname, 'tests', 'context.html'),
     port             : 9876,
     colors           : true,
     logLevel         : config.LOG_INFO,
