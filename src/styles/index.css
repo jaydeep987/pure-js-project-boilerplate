@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+}
+
+.main-header {
+  background-color: #2196f3;
+  padding: 0 5px;
+  color: #fff;
+  top: 0;
+  left: auto;
+  right: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-direction: column;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+
+.header-title {
+  margin: 1em;
+}
+
+.main {
+  width: 100%;
+  padding-top: 80px;
+  display: block;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.toolbar {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 2px -1px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 2px 0px rgba(0,0,0,0.12);
+}
+
+.title1 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 0.007em;
+}
+
+.btn1 {
+  margin: 5px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #2196f3;
+  padding: 6px;
+  font-size: 0.875rem;
+  min-width: 64px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  border: 0;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 3px 1px -2px rgba(0,0,0,0.12);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.btn1:hover {
+  background-color: #1976d2;
+}
+
+.contents {
+  margin: 0 auto;
+}
+
+.table {
+  display: table;
+  min-width: 350px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.table thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.table thead tr {
+  height: 56px;
+  display: table-row;
+  outline: none;
+  vertical-align: middle;
+}
+
+.table thead th {
+  display: table-cell;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 5px;
+  border-bottom: 1px solid rgb(224, 224, 224, 1);
+}
+
+.table thead th.right {
+  text-align: right;
+  flex-direction: row-reverse;
+}
+
+.table tbody {
+  display: table-row-group;
+  vertical-align: middle;
+}
+
+.table tbody tr {
+  display: table-row;
+  height: 48px;
+  outline: none;
+  vertical-align: middle;
+}
+
+.table tbody td {
+  display: table-cell;
+  padding: 4px 5px;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  border-bottom: 1px solid rgb(224, 224, 224, 1);
+}
+
+.table td.right {
+  text-align: right;
+  flex-direction: row-reverse;
+}
